@@ -1,46 +1,66 @@
-# LingoQuest — the published site
+# LingoQuest
 
-Live at **https://megumi-joy.github.io/skills-github-pages/**
+**Live: https://megumi-joy.github.io/skills-github-pages/**
 
-This repository holds the *built* site and nothing else: a folder of static
-HTML, CSS and JavaScript that GitHub Pages serves from the `main` branch.
-There is no source here and nothing to run — editing these files by hand
-would be overwritten by the next publish.
+A learning app for school-age students: short lessons that explain a rule,
+exercises that check whether it was understood, and a map that opens as the
+work gets done. Languages first, then physics, programming, chess and
+robotics.
 
-## Where the source lives
+This repository serves the built site. The application source is private —
+happy to walk through it.
 
-[megumi-joy/LanguageLearningAdventure](https://github.com/megumi-joy/LanguageLearningAdventure)
-— a Next.js app under `web/`. Its workflow `.github/workflows/pages.yml`
-builds a static export and uploads it as the `site` artifact; that artifact
-is what gets committed here.
+## What is in it
 
-The split exists because a workflow's token only writes to its own
-repository. The build happens there, the publish happens here.
+- **Eleven tracks** — English (from the alphabet up), Spanish, German,
+  Catalan, Ukrainian, Russian, physics, programming, chess and robotics for
+  younger children.
+- **A worked Ukrainian course** — *звуки, склади, наголос*: four lessons,
+  each running Словник → Теорія → Практика → Тест, and each ending where the
+  rule stops working rather than where it is convenient.
+- **456 exercises** across four kinds — multiple choice, typed answer,
+  fill-the-gap and build-the-word from letters.
+- Placement test, practice sets, lecture pages, group and club schedules,
+  a world map and a learner dashboard.
 
-## Publishing an update
+## How it is built
 
-1. Run **Build the static site** in the source repository (it also runs on
-   push to `main` and `deploy/pages`).
-2. Download the `site` artifact from that run.
-3. Replace everything in this repository except `LICENSE` and this README
-   with the artifact's contents, then commit to `main`. Pages picks it up
-   within a minute or so.
+Next.js 16 (App Router) and React 19, TypeScript, Tailwind CSS 4. Supabase
+for authentication in the server deployment.
 
-## Two details that break the site if lost
+The same codebase produces two builds. The usual server build is unchanged.
+Setting `STATIC_EXPORT=1` produces a folder of files instead, which is what
+this repository serves — no server, nothing to fall over, and the site costs
+nothing to host.
 
-- **`.nojekyll`** — without it Pages runs the folder through Jekyll, which
-  drops every directory starting with an underscore, `_next/` among them.
-  The symptom is a page with no styles, which looks like broken markup
-  rather than a missing file.
-- **The base path** — a project site is served from `/skills-github-pages`,
-  not from the domain root, so the build sets
-  `NEXT_PUBLIC_BASE_PATH=/skills-github-pages`. Publishing to a different
-  repository, or putting a custom domain in front, means rebuilding with a
-  different value.
+Making that work took more than flipping the flag:
 
-## What is not here
+- **Middleware and the API route cannot exist in a static export.** They are
+  not deleted or commented out — a build script moves them aside for the
+  length of the export and restores them afterwards, so the server build
+  keeps working from the same source.
+- **Dynamic routes are enumerated at build time** through
+  `generateStaticParams`, driven by the course data itself, so a new course
+  gets a page without a second list to keep in step.
+- **A project site is served from a sub-path**, not the domain root, which
+  breaks every link the framework does not rewrite. The build asserts that
+  no root-absolute link survives into the output, because the failure looks
+  like broken CSS and points nowhere near its cause.
+- **The build verifies the site, not just the compiler**: entry pages, a
+  lesson page, the asset paths, and the `.nojekyll` marker whose absence
+  makes GitHub Pages silently drop the framework's own directory.
 
-The app's server side — the visit-tracking endpoint and the Supabase session
-middleware — cannot run on Pages and is left out of this build. It stays in
-the source repository for the server deployment; the client-side visit
-tracker stays silent here unless a backend URL is configured at build time.
+## Two decisions worth explaining
+
+**No personal data is collected.** Visit logging records the path, the
+timestamp and a coarse country — no IP, no cookie, no user-agent. An
+audience that includes children rules out casual IP logging, which is
+personal data under GDPR whether or not a name is attached. In this static
+build the tracker stays silent unless a backend is configured at build time.
+
+**The exercise content is generated, not copied.** The Ukrainian school
+textbooks behind it are copyrighted and carry no free licence. What was used
+are facts copyright does not cover — which words occur, how often, and the
+order in which a primer introduces letters — and every exercise was composed
+from those facts by a generator. No page, scan or sentence from the books is
+published here.
