@@ -1,0 +1,30 @@
+{
+  "name": "LingoQuest",
+  "short_name": "LingoQuest",
+  "description": "Learn a language by exploring — lessons, exercises and a map that opens as you go.",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#2ec76f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Practice", "url": "/practice" },
+    { "name": "Lessons", "url": "/lectures" },
+    { "name": "Courses", "url": "/courses" }
+  ]
+}

@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[64296,["/skills-github-pages/_next/static/chunks/8c51f047a474fd5d.js","/skills-github-pages/_next/static/chunks/0d1a6458e67db797.js","/skills-github-pages/_next/static/chunks/04325de59988c288.js"],"LessonView"]
+3:I[97367,["/skills-github-pages/_next/static/chunks/ff1a16fafef87110.js","/skills-github-pages/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"7WVr8jvfgT4ahz5dlLYwi","rsc":["$","$1","c",{"children":[["$","$L2",null,{"lessonId":"l3"}],[["$","script","script-0",{"src":"/skills-github-pages/_next/static/chunks/0d1a6458e67db797.js","async":true}],["$","script","script-1",{"src":"/skills-github-pages/_next/static/chunks/04325de59988c288.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
