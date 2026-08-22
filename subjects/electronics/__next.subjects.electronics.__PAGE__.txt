@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
-2:I[47257,["/skills-github-pages/_next/static/chunks/ff1a16fafef87110.js","/skills-github-pages/_next/static/chunks/d2be314c3ece3fbe.js"],"ClientPageRoot"]
-3:I[21617,["/skills-github-pages/_next/static/chunks/8c51f047a474fd5d.js","/skills-github-pages/_next/static/chunks/d33e2608fc02ab10.js"],"default"]
-6:I[97367,["/skills-github-pages/_next/static/chunks/ff1a16fafef87110.js","/skills-github-pages/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+2:I[47257,["/lingoquest/_next/static/chunks/ff1a16fafef87110.js","/lingoquest/_next/static/chunks/d2be314c3ece3fbe.js"],"ClientPageRoot"]
+3:I[21617,["/lingoquest/_next/static/chunks/8c51f047a474fd5d.js","/lingoquest/_next/static/chunks/a3b6e9f99e643dbf.js"],"default"]
+6:I[97367,["/lingoquest/_next/static/chunks/ff1a16fafef87110.js","/lingoquest/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"esF2m5ojUh0PWUqKvHWIH","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/skills-github-pages/_next/static/chunks/d33e2608fc02ab10.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"L6M7qe-tWx3-8eTy3lI7i","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/lingoquest/_next/static/chunks/a3b6e9f99e643dbf.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null

@@ -1,6 +1,6 @@
 # LingoQuest
 
-**Live: https://megumi-joy.github.io/skills-github-pages/**
+**Live: https://megumi-joy.github.io/lingoquest/**
 
 A learning app for school-age students: short lessons that explain a rule,
 exercises that check whether it was understood, and a map that opens as the
