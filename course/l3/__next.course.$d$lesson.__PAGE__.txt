@@ -2,5 +2,5 @@
 2:I[64296,["/lingoquest/_next/static/chunks/8c51f047a474fd5d.js","/lingoquest/_next/static/chunks/0d1a6458e67db797.js","/lingoquest/_next/static/chunks/04325de59988c288.js"],"LessonView"]
 3:I[97367,["/lingoquest/_next/static/chunks/ff1a16fafef87110.js","/lingoquest/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"buildId":"L6M7qe-tWx3-8eTy3lI7i","rsc":["$","$1","c",{"children":[["$","$L2",null,{"lessonId":"l3"}],[["$","script","script-0",{"src":"/lingoquest/_next/static/chunks/0d1a6458e67db797.js","async":true}],["$","script","script-1",{"src":"/lingoquest/_next/static/chunks/04325de59988c288.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"SmFIW4w2ZSi_0yAwvek99","rsc":["$","$1","c",{"children":[["$","$L2",null,{"lessonId":"l3"}],[["$","script","script-0",{"src":"/lingoquest/_next/static/chunks/0d1a6458e67db797.js","async":true}],["$","script","script-1",{"src":"/lingoquest/_next/static/chunks/04325de59988c288.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null
