@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[47257,["/lingoquest/_next/static/chunks/ff1a16fafef87110.js","/lingoquest/_next/static/chunks/d2be314c3ece3fbe.js"],"ClientPageRoot"]
-3:I[30257,["/lingoquest/_next/static/chunks/8c51f047a474fd5d.js","/lingoquest/_next/static/chunks/16fe6345c64ae40f.js"],"default"]
+3:I[30257,["/lingoquest/_next/static/chunks/8c51f047a474fd5d.js","/lingoquest/_next/static/chunks/13c7d45042c50f35.js"],"default"]
 6:I[97367,["/lingoquest/_next/static/chunks/ff1a16fafef87110.js","/lingoquest/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"SmFIW4w2ZSi_0yAwvek99","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/lingoquest/_next/static/chunks/16fe6345c64ae40f.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"7AVEHuPOehlH2RyuB2xT_","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/lingoquest/_next/static/chunks/13c7d45042c50f35.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
